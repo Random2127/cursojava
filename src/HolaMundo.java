@@ -6,13 +6,14 @@ public class HolaMundo {
 
 		System.out.println("Hello World!!");
 
-		String nombre = "Victor";
-		String apellido1 = "Medina";
+		String nombre = "Perico";
+		String apellido1 = "de las Pelotas";
 
-		int edad = 45;
+		int edad = 9912;
 
 		System.out.println(nombre + " " + apellido1 + " " + edad);
-
+		System.out.println("Bye Bye!! Cruel World.");
+		
 	}
 
 }
