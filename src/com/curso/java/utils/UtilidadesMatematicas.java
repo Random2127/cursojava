@@ -14,9 +14,9 @@ public class UtilidadesMatematicas {
 		int resultSuma = suma(num1, num2);
 		System.out.println("El resultado de la suma es: " + resultSuma);
 
-		System.out.println("Introduzca el primer operador: ");
+		System.out.println("Introduzca el primer operando: ");
 		num1 = Integer.parseInt(sc.nextLine());
-		System.out.println("Introduzca el segundo operador: ");
+		System.out.println("Introduzca el segundo operando: ");
 		num2 = Integer.parseInt(sc.nextLine());
 		System.out.println("Introduzca la operación a realizar: ");
 		String operand = sc.nextLine();
@@ -33,11 +33,11 @@ public class UtilidadesMatematicas {
 		System.out.println("La media del array es: " + media);
 	}
 
-	private static int suma(int num1, int num2) {
+	public static int suma(int num1, int num2) {
 		return num1 + num2;
 	}
 
-	private static int operacion(int num1, int num2, String operand) {
+	public static int operacion(int num1, int num2, String operand) {
 		int result = 0;
 
 		if (operand.equals("+")) {
