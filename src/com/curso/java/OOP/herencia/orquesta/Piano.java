@@ -11,6 +11,7 @@ public class Piano extends Instrumento {
 		this.tipoPiano = tipoPiano;
 	}
 
+	@Override
 	public void afinar() {
 		System.out.println("Afinando el piano..");
 		super.afinar();

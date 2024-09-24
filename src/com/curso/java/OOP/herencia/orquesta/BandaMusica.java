@@ -29,13 +29,27 @@ public class BandaMusica {
 	}
 
 	private void tocarInstrumentos(Instrumento[] instrument) {
-		for (int i = 0; i < instrument.length - 1; i++) {
-			instrument[i].tocar();
+		for (int i = 0; i < instrument.length; i++) {
+
+			if (instrument[i] instanceof Tambor) {
+				((Tambor) instrument[i]).aporrear();
+			} else {
+				instrument[i].tocar();
+			}
 		}
-		((Tambor) instrument[3]).aporrear();
+
+		for (Instrumento instrumento : instrument) {
+			if (instrumento.getTipo().equalsIgnoreCase("cuerda")) {
+				System.out.println("(Guitarras) ♪  ♫  ♪");
+			} else if (instrumento.getTipo().equalsIgnoreCase("cuerda percutida")) {
+				System.out.println("(Teclas sonando♪) ♫ ♪ ♫");
+			} else {
+				System.out.println("Porron pom pom");
+			}
+		}
 
 		boolean suenaBien = true;
-		for (int i = 0; i < instrument.length - 1; i++) {
+		for (int i = 0; i < instrument.length; i++) {
 			if (!instrument[i].isAfinar()) {
 				suenaBien = false;
 			}

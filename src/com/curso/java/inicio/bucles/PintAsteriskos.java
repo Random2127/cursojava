@@ -166,7 +166,7 @@ public class PintAsteriskos {
 	}
 
 	private static void romboVert(int numero) {
-		// TODO Auto-generated method stub // i = 1
+	 // i = 1
 		for (int i = 1; i <= numero; i++) {
 			for (int j = i; j < numero; j++) {
 				System.out.print(" ");

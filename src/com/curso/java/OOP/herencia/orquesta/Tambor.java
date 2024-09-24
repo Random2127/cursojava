@@ -9,6 +9,7 @@ public class Tambor extends Instrumento {
 		this.material = material;
 	}
 
+	@Override
 	public void afinar() {
 		super.afinar();
 		this.setAfinar(true);

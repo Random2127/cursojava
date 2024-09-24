@@ -13,12 +13,14 @@ public class Instrumento {
 	}
 
 	public void afinar() {
+
 		double rand = Math.random();
 
 		if (rand > 0.4) {
 			System.out.println("El instrumento " + nombre + " está afinado\n");
 			this.afinar = true;
 		}
+		// this.afinar = Math.random() > 0.4; This will give true
 
 	}
 

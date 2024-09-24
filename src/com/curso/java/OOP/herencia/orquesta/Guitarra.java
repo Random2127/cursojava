@@ -9,6 +9,7 @@ public class Guitarra extends Instrumento {
 		this.numCuerdas = numCuerdas;
 	}
 
+	@Override
 	public void afinar() {	
 		System.out.println("La guitarra se está afinando..");
 		super.afinar();

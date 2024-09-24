@@ -8,6 +8,7 @@ public class GuitarraElectrica extends Guitarra {
 		this.potencia = potencia;
 	}
 
+	@Override
 	public void tocar() {
 		System.out.println("La guitarra eléctrica está tocando muy alto");
 	}

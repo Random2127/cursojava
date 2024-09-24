@@ -3,7 +3,6 @@ package com.curso.java.random;
 public class BubbleSort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		int[] numeros = { 3, 57, 7, 65, 12, 73, 45 };
 
