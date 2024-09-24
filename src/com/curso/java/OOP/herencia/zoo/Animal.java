@@ -1,6 +1,6 @@
 package com.curso.java.OOP.herencia.zoo;
 
-public abstract class Animal { // Abstract avoids creating objects of its class
+public class Animal { // Abstract avoids creating objects of its class
 	private String id;
 	private String nombre;
 	private double peso;

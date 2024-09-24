@@ -12,11 +12,23 @@ public class Zoologico {
 		Animal vaca2 = new Vaca("02", "Paca", 400, "Rudford");
 		vaca2.comer();
 		vaca2.beber();
+
 		// vaca2.mugir();
+		// Los métodos no se heredan por la variable en la que están
+		// Podemos hacer un casting de la clase para forzarlo
+		// CASTING two versions
 		Vaca vacaMuge = (Vaca) vaca2;
-		vacaMuge.mugir();
 		// ((Vaca2)vaca2).mugir(); a different way
+		vacaMuge.mugir();
 		System.out.println(vaca2.toString());
+
+		// Podemos hacer cast en ambas direcciones?
+		//
+		Animal ani1 = new Animal("4444", "Ani1", 200);
+		ani1.comer();
+		Vaca vacaNew = (Vaca) ani1;
+		vacaNew.comer();
+
 	}
 
 }
