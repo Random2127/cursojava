@@ -2,18 +2,28 @@ package com.curso.java.OOP.herencia.hospital;
 
 public class Hospital {
 
+	private String nombre;
+	private Habitacion[] habitaciones;
+	private Paciente[] salaDeEspera;
+
+	public Hospital(String nombre, Habitacion[] habitaciones, Paciente[] salaDeEspera) {
+		this.nombre = nombre;
+		this.habitaciones = habitaciones;
+		this.salaDeEspera = salaDeEspera;
+	}
+
 	public static void main(String[] args) {
 
-		String nombre;
+		String nombre = "Principe Vlad";
 		Habitacion[] habitaciones = new Habitacion[2];
 		Paciente[] salaDeEspera = new Paciente[3];
 
-		Hospital hospital = new Hospital();
-		hospital.abrirHospital(hospital, habitaciones, salaDeEspera);
+		Hospital hospital = new Hospital(nombre, habitaciones, salaDeEspera);
+		hospital.abrirHospital(hospital);
 
 	}
 
-	private void abrirHospital(Hospital hospital, Habitacion[] habitaciones, Paciente[] salaDeEspera) {
+	private void abrirHospital(Hospital hospital) {
 
 		Habitacion hab1 = new Habitacion(1, null);
 		Habitacion hab2 = new Habitacion(2, null);
